@@ -1,1 +1,45 @@
 /* Add application styles & imports to this file! */
+.underline-on-hover {
+    position: relative;
+    cursor: pointer;
+  }
+  
+  .underline-on-hover::after {
+    content: '';
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 0;
+    height: 0.1em; 
+    background-color: rgb(255, 255, 255);
+    transition: width 0.3s ease; 
+  }
+  
+  .underline-on-hover:hover::after {
+    width: 100%;
+  }
+
+  .container {
+    display: flex;
+    flex-wrap: wrap;
+}
+
+
+
+@media (max-width: 1200px) {
+  .icon {
+    font-size: 6rem !important; 
+  }
+}
+
+@media (max-width: 768px) {
+  .icon {
+    font-size: 4rem !important; 
+  }
+}
+
+@media (max-width: 480px) {
+  .icon {
+    font-size: 2rem !important; 
+  }
+}

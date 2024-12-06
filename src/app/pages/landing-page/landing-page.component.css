@@ -19,6 +19,7 @@
 
 .card-container {
   height: 31.25rem;
+  overflow: hidden;
 }
 
 .background-card {
@@ -30,4 +31,50 @@
   background-position: center center;
   background-size: cover;
   transition: transform 0.5s ease;
+}
+
+.card-container:hover .background-card {
+  transform: scale(1.2);
+}
+
+.rotate-on-hover{
+  transition: transform 0.5s ease;
+}
+
+.rotate-on-hover:hover {
+  animation: spin 5s linear infinite;
+}
+
+@keyframes spin {
+  from {
+    transform: rotateY(0deg);
+  }
+  to {
+    transform: rotateY(360deg);
+  }
+}
+
+.num-size{
+  font-size: 12.5rem;
+}
+
+@media (max-width: 1200px) {
+  .num-size{
+    font-size: 8.5rem;
+  }
+  
+}
+
+@media (max-width: 768px) {
+  .num-size{
+    font-size: 6.5rem;
+  }
+  
+}
+
+@media (max-width: 480px) {
+  .num-size{
+    font-size: 4.5rem;
+  }
+  
 }
