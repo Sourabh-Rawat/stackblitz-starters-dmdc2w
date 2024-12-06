@@ -1,0 +1,33 @@
+.landing-page {
+  background-color: black;
+}
+
+.text-button {
+  color: white;
+}
+
+.icon {
+  color: white;
+  font-size: 12rem;
+  line-height: 100%;
+  font-weight: 600;
+}
+
+.lead {
+  font-size: x-large;
+}
+
+.card-container {
+  height: 31.25rem;
+}
+
+.background-card {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  overflow: hidden;
+  background-repeat: no-repeat;
+  background-position: center center;
+  background-size: cover;
+  transition: transform 0.5s ease;
+}

@@ -1,0 +1,11 @@
+.header {
+  background-color: black;
+  position: sticky;
+  top: 0;
+  z-index: 99999;
+}
+
+.text-button {
+  color: white;
+  margin: auto;
+}
